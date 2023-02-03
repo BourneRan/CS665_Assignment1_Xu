@@ -4,6 +4,13 @@ public class VendingTea extends Vending{
     private double[] price = new double[]{2.99, 3.99, 4.99};
     private int flag = 0;
     private String[] Tea = new String[]{"BlackTea", "GreenTea", "YellowTea"};
+
+    public String GetbeverageName(int choice){
+        return Tea[choice-1];
+    }
+    public double getprice(int choice){
+        return price[choice];
+    }
     public void TeaChoice(){
         Scanner s1 = new Scanner(System.in);
         System.out.println("Please select tea favor you like:");

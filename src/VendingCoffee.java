@@ -9,6 +9,15 @@ public class VendingCoffee extends Vending{
     private static String[] Coffee = new String[]{"Espresso", "Americano", "Latte Macchiato"};
     private static Scanner s2 = new Scanner(System.in);
 
+
+    public double Getprice(int choice){
+        return price[choice-1];
+    }
+
+    public String GetbeverageName(int choice){
+        return Coffee[choice-1];
+    }
+
     public static void addsugarmilk(int choice){
         flag_1 = 1;
         while(flag_2==0){
